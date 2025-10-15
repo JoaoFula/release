@@ -4,13 +4,13 @@ base_images:
     namespace: ci
     tag: v1.64.8
   lightspeed-console-plugin:
-      name: lightspeed-console-plugin
-      namespace: ols
-      tag: latest
+    name: lightspeed-console-plugin
+    namespace: ols
+    tag: latest
   lightspeed-console-plugin-pf5:
-      name: lightspeed-console-plugin-pf5
-      namespace: ols
-      tag: latest
+    name: lightspeed-console-plugin-pf5
+    namespace: ols
+    tag: latest
   lightspeed-service-api:
     name: lightspeed-service-api
     namespace: ols
