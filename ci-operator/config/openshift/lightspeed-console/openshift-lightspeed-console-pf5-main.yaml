@@ -67,6 +67,6 @@ tests:
     test:
     - ref: fips-check-image-scan
 zz_generated_metadata:
-  branch: pf5-main
+  branch: pattern-fly-5
   org: openshift
   repo: lightspeed-console
