@@ -1,10 +1,10 @@
 presubmits:
-  openshift/lightspeed-console-pf5:
+  openshift/lightspeed-console:
   - agent: kubernetes
     always_run: false
     branches:
-    - ^main$
-    - ^main-
+    - ^pf5-main$
+    - ^pf5-main-
     cluster: build05
     context: ci/prow/fips-image-scan-service
     decorate: true
@@ -66,8 +66,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^main$
-    - ^main-
+    - ^pf5-main$
+    - ^pf5-main-
     cluster: build05
     context: ci/prow/i18n
     decorate: true
@@ -128,8 +128,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^main$
-    - ^main-
+    - ^pf5-main$
+    - ^pf5-main-
     cluster: build05
     context: ci/prow/images
     decorate: true
@@ -183,8 +183,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^main$
-    - ^main-
+    - ^pf5-main$
+    - ^pf5-main-
     cluster: build05
     context: ci/prow/lint
     decorate: true
@@ -245,8 +245,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^main$
-    - ^main-
+    - ^pf5-main$
+    - ^pf5-main-
     cluster: build05
     context: ci/prow/security
     decorate: true
