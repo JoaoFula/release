@@ -3,8 +3,8 @@ presubmits:
   - agent: kubernetes
     always_run: false
     branches:
-    - ^pf5-main$
-    - ^pf5-main-
+    - ^pattern-fly-5$
+    - ^pattern-fly-5-
     cluster: build05
     context: ci/prow/fips-image-scan-service
     decorate: true
@@ -13,7 +13,7 @@ presubmits:
     labels:
       ci.openshift.io/generator: prowgen
       pj-rehearse.openshift.io/can-be-rehearsed: "true"
-    name: pull-ci-openshift-lightspeed-console-pf5-main-fips-image-scan-service
+    name: pull-ci-openshift-lightspeed-console-pattern-fly-5-fips-image-scan-service
     rerun_command: /test fips-image-scan-service
     skip_if_only_changed: ^docs/|\.md$|^\.tekton/|^\.github/|^hack/|^(?:.*/)?(?:\.gitignore|\.snyk|\.dockerignore|OWNERS|PROJECT|LICENSE)$
     spec:
@@ -66,8 +66,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^pf5-main$
-    - ^pf5-main-
+    - ^pattern-fly-5$
+    - ^pattern-fly-5-
     cluster: build05
     context: ci/prow/i18n
     decorate: true
@@ -76,7 +76,7 @@ presubmits:
     labels:
       ci.openshift.io/generator: prowgen
       pj-rehearse.openshift.io/can-be-rehearsed: "true"
-    name: pull-ci-openshift-lightspeed-console-pf5-main-i18n
+    name: pull-ci-openshift-lightspeed-console-pattern-fly-5-i18n
     rerun_command: /test i18n
     spec:
       containers:
@@ -128,8 +128,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^pf5-main$
-    - ^pf5-main-
+    - ^pattern-fly-5$
+    - ^pattern-fly-5-
     cluster: build05
     context: ci/prow/images
     decorate: true
@@ -138,7 +138,7 @@ presubmits:
     labels:
       ci.openshift.io/generator: prowgen
       pj-rehearse.openshift.io/can-be-rehearsed: "true"
-    name: pull-ci-openshift-lightspeed-console-pf5-main-images
+    name: pull-ci-openshift-lightspeed-console-pattern-fly-5-images
     rerun_command: /test images
     spec:
       containers:
@@ -183,8 +183,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^pf5-main$
-    - ^pf5-main-
+    - ^pattern-fly-5$
+    - ^pattern-fly-5-
     cluster: build05
     context: ci/prow/lint
     decorate: true
@@ -193,7 +193,7 @@ presubmits:
     labels:
       ci.openshift.io/generator: prowgen
       pj-rehearse.openshift.io/can-be-rehearsed: "true"
-    name: pull-ci-openshift-lightspeed-console-pf5-main-lint
+    name: pull-ci-openshift-lightspeed-console-pattern-fly-5-lint
     rerun_command: /test lint
     spec:
       containers:
@@ -245,8 +245,8 @@ presubmits:
   - agent: kubernetes
     always_run: true
     branches:
-    - ^pf5-main$
-    - ^pf5-main-
+    - ^pattern-fly-5$
+    - ^pattern-fly-5-
     cluster: build05
     context: ci/prow/security
     decorate: true
@@ -255,7 +255,7 @@ presubmits:
     labels:
       ci.openshift.io/generator: prowgen
       pj-rehearse.openshift.io/can-be-rehearsed: "true"
-    name: pull-ci-openshift-lightspeed-console-pf5-main-security
+    name: pull-ci-openshift-lightspeed-console-pattern-fly-5-security
     optional: true
     rerun_command: /test security
     spec:
